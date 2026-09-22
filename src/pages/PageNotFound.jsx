@@ -18,11 +18,11 @@ export default function PageNotFound() {
 
         {/* Main Error Text */}
         <h1 className="text-xs sm:text-sm font-bold text-slate-900 tracking-tight pt-1">
-          RESOURCE_COMPILATION_FAILED
+          RESOURCE COMPILATION FAILED
         </h1>
 
         <p className="text-xs text-slate-500 pb-2">
-          {"// unauthorized_access_blocked"}
+          {"unauthorized_access_blocked"}
         </p>
 
         {/* Back Button */}
@@ -30,7 +30,7 @@ export default function PageNotFound() {
           <a
             href="/"
             className="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-mono font-bold transition-all shadow-sm cursor-pointer">
-            {"// return_to_dashboard"}
+            {"return_to_dashboard()"}
           </a>
         </div>
       </div>
