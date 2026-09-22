@@ -78,7 +78,7 @@ export default function FootersPreviewPage() {
         <button
           onClick={handleBackToMain}
           className="font-mono text-xs text-slate-600 hover:text-slate-900 border border-slate-200 px-3 py-1.5 rounded-xl bg-slate-100 transition-colors shadow-xs cursor-pointer flex items-center space-x-1.5">
-          <span>{"// back_to_syncxel"}</span>
+          <span>{"back_to_syncxel()"}</span>
         </button>
 
         <div className="flex items-center gap-3">
