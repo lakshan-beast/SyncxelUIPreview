@@ -40,7 +40,7 @@ export default function LandingPagesPreviewPage() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 md:px-8 pt-10">
+      <div className="max-w-7xl mx-auto px-0 md:px-2 pt-2">
         {/* NEXT-LEVEL HEADER SECTION */}
         <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 mb-10 shadow-sm">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
