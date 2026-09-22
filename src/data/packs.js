@@ -41,7 +41,7 @@ export const uiPacksData = [
     checkoutUrl: "https://yourstore.lemonsqueezy.com/buy/footer-pack-id",
   },
   {
-    id: "landingPack",
+    id: "landing-pack-01",
     title: "Premium Landing Pages Sandbox",
     category: "Landing Pages",
     price: "$35",
