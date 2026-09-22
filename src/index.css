@@ -1,1 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
+
 @import "tailwindcss";
+
+@theme {
+  --font-exo: "Exo", sans-serif;
+  --font-baloo: "Baloo 2", sans-serif;
+}
+
+/* Global Smooth Behavior & Font Smoothing */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-baloo, sans-serif);
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings Custom Font */
+h1,
+h2,
+h3,
+h4,
+.font-heading {
+  font-family: var(--font-exo, sans-serif);
+}
+
+/* Modern Minimal Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090b10;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
