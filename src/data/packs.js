@@ -1,65 +1,107 @@
-// // src/data/packs.js
-
-// export const uiPacksData = [
-//   {
-//     id: "footer-pack-01",
-//     title: "Premium Footer Component Pack",
-//     category: "Footers",
-//     price: "$25",
-//     sales: "New",
-//     description: "5 Production-ready React, Tailwind CSS & Framer Motion footers with responsive layouts and interactive newsletter states.",
-//     previewImg: "src/assets/footer-preview.png",
-//     demoUrl: "[https://syncxel-ui-preview.vercel.app/footer](https://syncxel-ui-preview.vercel.app/footer)", // Local preview route or component view
-//     checkoutUrl: "https://yourstore.lemonsqueezy.com/buy/footer-pack-id",
-//     liveUrl: "",
-//   },
-//   {
-//     id: "auth-pack-01",
-//     title: "Modern Auth Forms Pack",
-//     category: "Authentication",
-//     price: "$29",
-//     sales: "Popular",
-//     description: "Clean and secure React login, signup, and OTP verification forms with glassmorphic and floating label styles.",
-//     previewImg: "src/assets/auth-preview.png",
-//     demoUrl: "",
-//     checkoutUrl: "https://yourstore.lemonsqueezy.com/buy/auth-pack-id",
-//   },
-// ];
-
-// src/data/packs.js
 
 export const uiPacksData = [
+  // navbar data
   {
-    id: "footer-pack-01",
-    title: "Premium Footers Pack Sandbox",
-    category: "Footers",
-    price: "$25",
-    sales: "New",
-    description: "Production-ready, responsive footer components crafted with Tailwind CSS and React. Fully customized for modern developer portfolios and SaaS platforms.",
-    previewImg: "src/assets/footer-preview.png",
-    demoUrl: "https://syncxel-ui-preview.vercel.app/",
-    checkoutUrl: "https://yourstore.lemonsqueezy.com/buy/footer-pack-id",
-  },
-  {
-    id: "landing-pack-01",
-    title: "Premium Landing Pages Sandbox",
-    category: "Landing Pages",
-    price: "$35",
+    id: "navbar-pack-01",
+    title: "Modern Navbar Component Pack",
+    category: "Navbars",
+    price: "$12",
     sales: "Popular",
-    description: "High-converting, production-ready landing page templates crafted with React and Tailwind CSS. Test drive multiple variations in a secure sandbox.",
-    previewImg: "src/assets/landing-preview.png",
-    demoUrl: "https://syncxel-ui-preview.vercel.app/landing",
-    checkoutUrl: "https://yourstore.lemonsqueezy.com/buy/landing-pack-id",
+    description: "Responsive sticky navbars, mobile hamburger drawers, dropdown menus, and glassmorphic header variations built with React and Tailwind CSS.",
+    previewImg: "src/assets/navbar-preview.png",
+    demoUrl: "https://syncxel-ui-preview.vercel.app/navbars",
+    checkoutUrl: "https://syncxel.lemonsqueezy.com/buy/navbar-pack-id",
   },
+
+  // hero data
+  {
+    id: "hero-pack-01",
+    title: "High-Converting Hero Sections Pack",
+    category: "Hero Sections",
+    price: "$15",
+    sales: "Best Seller",
+    description: "Eye-catching hero sections featuring badge pills, compelling CTA buttons, product mockup wrappers, and subtle Framer Motion micro-interactions.",
+    previewImg: "src/assets/hero-preview.png",
+    demoUrl: "https://syncxel-ui-preview.vercel.app/hero",
+    checkoutUrl: "https://syncxel.lemonsqueezy.com/buy/hero-pack-id",
+  },
+
+  // auth data
   {
     id: "auth-pack-01",
-    title: "Modern Auth Forms Pack",
+    title: "Complete Auth Flows Pack",
     category: "Authentication",
-    price: "$29",
+    price: "$19",
     sales: "Trending",
-    description: "Clean and secure React login, signup, and OTP verification forms with glassmorphic and floating label styles.",
+    description: "Secure and modern React login, signup, forgot password, and OTP verification flows crafted with clean Tailwind CSS and smooth animations.",
     previewImg: "src/assets/auth-preview.png",
     demoUrl: "https://syncxel-ui-preview.vercel.app/auth",
-    checkoutUrl: "https://yourstore.lemonsqueezy.com/buy/auth-pack-id",
+    checkoutUrl: "https://syncxel.lemonsqueezy.com/buy/auth-pack-id",
+  },
+
+  // feature pack data
+  {
+    id: "feature-pack-01",
+    title: "Bento Grid & Feature Sections Pack",
+    category: "Features",
+    price: "$15",
+    sales: "New",
+    description: "Modern Bento grid layouts and feature highlight cards designed to showcase your SaaS product's core strengths and technical capabilities.",
+    previewImg: "src/assets/feature-preview.png",
+    demoUrl: "https://syncxel-ui-preview.vercel.app/features",
+    checkoutUrl: "https://syncxel.lemonsqueezy.com/buy/feature-pack-id",
+  },
+
+  // pricing data pack
+  {
+    id: "pricing-pack-01",
+    title: "Dynamic Pricing Tables Pack",
+    category: "Pricing & Tables",
+    price: "$14",
+    sales: "Popular",
+    description: "High-converting monthly and annual toggle pricing grids, comparison tables, and feature-highlight cards built for SaaS landing pages.",
+    previewImg: "src/assets/pricing-preview.png",
+    demoUrl: "https://syncxel-ui-preview.vercel.app/pricing",
+    checkoutUrl: "https://syncxel.lemonsqueezy.com/buy/pricing-pack-id",
+  },
+
+  // testimonials data pack
+  {
+    id: "testimonials-pack-01",
+    title: "Social Proof & Testimonials Pack",
+    category: "Testimonials",
+    price: "$12",
+    sales: "New",
+    description: "Engaging review cards, grid layouts, and animated testimonial carousels to build instant trust and credibility with your website visitors.",
+    previewImg: "src/assets/testimonials-preview.png",
+    demoUrl: "https://syncxel-ui-preview.vercel.app/testimonials",
+    checkoutUrl: "https://syncxel.lemonsqueezy.com/buy/testimonials-pack-id",
+  },
+
+  // faq pack
+  {
+    id: "faq-pack-01",
+    title: "Interactive FAQ Accordions Pack",
+    category: "FAQ",
+    price: "$9",
+    sales: "Essential",
+    description: "Smooth collapsible accordion components designed to address common customer queries cleanly without cluttering your page layout.",
+    previewImg: "src/assets/faq-preview.png",
+    demoUrl: "https://syncxel-ui-preview.vercel.app/faq",
+    checkoutUrl: "https://syncxel.lemonsqueezy.com/buy/faq-pack-id",
+  },
+
+  // footer pack
+  {
+    id: "footer-pack-01",
+    title: "Supreme Footer Component Pack",
+    category: "Footers",
+    price: "$12",
+    sales: "Popular",
+    description: "5 Production-ready responsive footers built with React, Tailwind CSS & Framer Motion. Features newsletter integration and multi-column navigation.",
+    previewImg: "src/assets/footer-preview.png",
+    demoUrl: "https://syncxel-ui-preview.vercel.app/footers",
+    checkoutUrl: "https://syncxel.lemonsqueezy.com/buy/footer-pack-id",
+    liveUrl: "",
   },
 ];
