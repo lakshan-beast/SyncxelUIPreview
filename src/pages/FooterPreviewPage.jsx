@@ -344,6 +344,7 @@ import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ConponentsPreviewSandbox";
 import PremiumFooterOne from "../library/FootersDesigns/Footer01";
 import PremiumFooterTwo from "../library/FootersDesigns/Footer02";
+import PremiumFooterThree from "../library/FootersDesigns/Footer03";
 import { uiPacksData } from "../data/packs"; // 👈 packs.js එකෙන් ඩේටා ගෙන්වා ගැනීම
 import {
   HiTerminal,
@@ -379,7 +380,7 @@ export default function FootersPreviewPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans pb-24">
+    <div className="w-full min-h-screen bg-slate-50 font-sans pb-24">
       {/* GLOBAL TOP PREVIEW NAVIGATION */}
       <div className="w-full bg-white border-b border-slate-200 h-14 px-4 sm:px-6 flex justify-between items-center z-50 sticky top-0 shadow-xs select-none">
         <button
@@ -507,6 +508,22 @@ export default function FootersPreviewPage() {
           </div>
           <ComponentPreviewSandbox title="footer_02_tactile_3d">
             <PremiumFooterTwo />
+          </ComponentPreviewSandbox>
+        </div>
+
+        {/* 🛠️ FOOTER 02 LIVE PREVIEW */}
+        <div className="mb-10">
+          <div className="flex items-center justify-between mb-3 px-2">
+            <div className="flex items-center gap-2 font-mono text-xs text-slate-700 font-bold">
+              <HiTerminal className="w-4 h-4 text-slate-900" />
+              <span>03 / Footer 03 - Tactile Modern Layout</span>
+            </div>
+            <span className="text-[10px] font-mono text-slate-400 hidden sm:inline">
+              status: active_preview
+            </span>
+          </div>
+          <ComponentPreviewSandbox title="footer_03_tactile_3d">
+            <PremiumFooterThree />
           </ComponentPreviewSandbox>
         </div>
       </div>
