@@ -277,7 +277,7 @@ export default function FooterPreviewPage() {
 
       <div className="w-full mx-auto px-4 sm:px-8 pt-2">
         {/* HERO HEADER CARD */}
-        <div className="max-w-7xl mx-auto bg-white border border-slate-200 rounded-3xl p-4 sm:p-10 mb-5 shadow-sm relative overflow-hidden">
+        <div className="max-w-7xl mx-auto bg-white border border-slate-200 rounded-3xl p-5 sm:p-10 mb-5 shadow-sm relative overflow-hidden">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 relative z-10">
             <div className="space-y-2">
               <div className="flex flex-wrap items-center gap-1.5">
@@ -320,7 +320,7 @@ export default function FooterPreviewPage() {
           </div>
 
           {/* METADATA GRID */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-8 pt-8 border-t border-slate-200 text-xs font-baloo">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 mt-8 pt-8 border-t border-slate-200 text-xs font-baloo">
             <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 flex flex-col gap-1">
               <span className="text-slate-400 text-[10px]">FRAMEWORK</span>
               <span className="font-bold text-slate-900 flex items-center gap-1.5">
@@ -352,7 +352,7 @@ export default function FooterPreviewPage() {
         <div className="mb-12 pt-5">
           <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
             <span className="flex items-center gap-2">
-              <HiSparkles className="w-4 h-4" /> 01 / Footer Design 01
+              <HiSparkles className="w-4 h-4" /> Footer Design 01
             </span>
             <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
               active
@@ -366,7 +366,7 @@ export default function FooterPreviewPage() {
         <div className="mb-12">
           <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
             <span className="flex items-center gap-2">
-              <HiTerminal className="w-4 h-4" /> 02 / Footer Design 02
+              <HiTerminal className="w-4 h-4" /> Footer Design 02
             </span>
             <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
               active
@@ -380,7 +380,7 @@ export default function FooterPreviewPage() {
         <div className="mb-12">
           <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
             <span className="flex items-center gap-2">
-              <HiTerminal className="w-4 h-4" /> 03 / Footer Design 03
+              <HiTerminal className="w-4 h-4" /> Footer Design 03
             </span>
             <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
               active
