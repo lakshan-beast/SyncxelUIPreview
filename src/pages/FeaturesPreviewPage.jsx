@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
-import FeatureDesign01 from "../library/FeatureDesigns/FeatureDesign01";
-import FeatureDesign02 from "../library/FeatureDesigns/FeatureDesign02";
-import FeatureDesign03 from "../library/FeatureDesigns/FeatureDesign03";
+import FeatureDesign01 from "../library/FeaturesDesigns/FeatureDesign01";
+import FeatureDesign02 from "../library/FeaturesDesigns/FeatureDesign02";
+import FeatureDesign03 from "../library/FeaturesDesigns/FeatureDesign03";
 import { uiPacksData } from "../data/packs";
 import {
   HiTerminal,
