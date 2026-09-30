@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
-import TestimonialDesign01 from "../library/TestimonialDesigns/TestimonialDesign01";
-import TestimonialDesign02 from "../library/TestimonialDesigns/TestimonialDesign02";
-import TestimonialDesign03 from "../library/TestimonialDesigns/TestimonialDesign03";
+import TestimonialDesign01 from "../library/TestimonialsDesigns/TestimonialsDesign01";
+import TestimonialDesign02 from "../library/TestimonialsDesigns/TestimonialsDesign02";
+import TestimonialDesign03 from "../library/TestimonialsDesigns/TestimonialsDesign03";
 import { uiPacksData } from "../data/packs";
 import {
   HiTerminal,
