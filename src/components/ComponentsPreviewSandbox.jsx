@@ -157,7 +157,7 @@ export default function ComponentPreviewSandbox({ children, title }) {
         </div>
 
         {/* VIEWPORT RESIZE BUTTONS */}
-        <div className="flex items-center bg-slate-200/60 p-1 rounded-xl border border-slate-300/60">
+        <div className="hidden lg:flex items-center bg-slate-200/60 p-1 rounded-xl border border-slate-300/60">
           <button
             onClick={() => setWidthMode("sm")}
             className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono font-medium transition-all cursor-pointer ${
