@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
-import NavbarDesign01 from "../library/NavbarsDesigns/NavbarDesign01";
-import NavbarDesign02 from "../library/NavbarsDesigns/NavbarDesign02";
-import NavbarDesign03 from "../library/NavbarsDesigns/NavbarDesign03";
+import NavbarDesign01 from "../library/NavbarDesigns/NavbarDesign01";
+import NavbarDesign02 from "../library/NavbarDesigns/NavbarDesign02";
+import NavbarDesign03 from "../library/NavbarDesigns/NavbarDesign03";
 import { uiPacksData } from "../data/packs";
 import {
   HiTerminal,
