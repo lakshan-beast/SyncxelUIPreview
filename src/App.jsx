@@ -1,79 +1,19 @@
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import FooterPreviewPage from "./pages/FooterPreviewPage";
-// import LandingPagesPreviewPage from "./pages/LandingPreview"; // ⚠️ ඔයාගේ ෆိုင်ල් නේම් එක අනුව මෙක වෙනස් කරගන්න
-// import PageNotFound from "./pages/PageNotFound";
-
-// // Root එකට (/ ) එන අයව ප්‍රධාන සයිට් එකට රීඩිරෙක්ට් කරන කම්පොනන්ට් එක
-// function RootRedirect() {
-//   window.location.replace("https://syncxel.vercel.app");
-//   return null;
-// }
-
-// export default function App() {
-//   return (
-//     <BrowserRouter>
-//       <Routes>
-//         {/* 1. Root URL එකට (syncxel-ui-preview.vercel.app/) ආවොත් ප්‍රධාන සයිට් එකට යයි */}
-//         {/* <Route path="/" element={<RootRedirect />} /> */}
-
-//         {/* 2. Footer Preview Route */}
-//         <Route path="/" element={<FooterPreviewPage />} />
-
-//         {/* 3. Landing Pages Preview Route */}
-//         <Route path="/landing" element={<LandingPagesPreviewPage />} />
-
-//         {/* 4. වැරදි URL එකක් දැමුවහොත් 404 පෙන්වයි */}
-//         <Route path="*" element={<PageNotFound />} />
-//       </Routes>
-//     </BrowserRouter>
-//   );
-// }
-
-// src/App.jsx
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import FooterPreviewPage from "./pages/FooterPreviewPage";
-// import LandingPagesPreviewPage from "./pages/LandingPreview";
-// import PageNotFound from "./pages/PageNotFound";
-
-// export default function App() {
-//   return (
-//     <BrowserRouter>
-//       <Routes>
-//         {/* 1. Root URL එකට ( / ) ආපු ගමන් කෙලින්ම Footer Preview එක පෙන්වයි */}
-//         <Route path="/footer" element={<FooterPreviewPage />} />
-
-//         {/* 2. වෙනත් Pack එකක් සඳහා (උදා: Landing Pages) */}
-//         <Route path="/landing" element={<LandingPagesPreviewPage />} />
-
-//         {/* 3. වැරදි URL එකක් දැමුවහොත් 404 Page එක පෙන්වයි */}
-//         <Route path="*" element={<PageNotFound />} />
-//       </Routes>
-//     </BrowserRouter>
-//   );
-// }
-
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import FooterPreviewPage from "./pages/FooterPreviewPage";
-import LandingPagesPreviewPage from "./pages/LandingPreview";
-import PackPreviewViews from "./components/PackPreviewViews"; // අපි කලින් කතා කළ ඩයිනමික් ප්‍රීවීව් පේජ් එක
-import PageNotFound from "./pages/PageNotFound";
+import LandingPreviewPage from "./pages/LandingPreviewPage";
+import DevelopingPage from "./pages/DevelopingPage";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* 1. Root URL එකට ( / ) ආපු ගමන් Landing Preview එක පෙන්වයි */}
-        <Route path="/" element={<LandingPagesPreviewPage />} />
+        <Route path="/" element={<Navigate to="/footers" replace />} />
 
-        {/* 2. ස්ථාවර Preview Pages (අපි දැනට හදලා තියෙන ටික) */}
-        <Route path="/landing" element={<LandingPagesPreviewPage />} />
+        {/* Preview Routes */}
         <Route path="/footers" element={<FooterPreviewPage />} />
+        <Route path="/landing" element={<LandingPreviewPage />} />
 
-        {/* 3. ඩයිනමික් රූට් එක (packs.js එකේ තියෙන ඕනෑම පැක් එකක් id එක හරහා ලෝඩ් කිරීමට) */}
-        <Route path="/preview/:packId" element={<PackPreviewViews />} />
-
-        {/* 4. වැරදි URL එකක් දැමුවහොත් 404 Page එක පෙන්වයි */}
-        <Route path="*" element={<PageNotFound />} />
+        <Route path="*" element={<DevelopingPage />} />
       </Routes>
     </BrowserRouter>
   );

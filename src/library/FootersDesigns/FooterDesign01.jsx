@@ -76,9 +76,6 @@ export default function PremiumFooterOne() {
             onSubmit={handleSubscribe}
             className="flex flex-col sm:flex-row gap-2 max-w-md w-full relative">
             <div className="relative flex-1">
-              <span className="absolute -top-3.5 left-0 font-mono text-[8px] text-neutral-300">
-                {"input[type='email']"}
-              </span>
               <input
                 type="email"
                 required

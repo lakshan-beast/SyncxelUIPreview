@@ -102,6 +102,5 @@ export const uiPacksData = [
     previewImg: "src/assets/footer-preview.png",
     demoUrl: "https://syncxel-ui-preview.vercel.app/footers",
     checkoutUrl: "https://syncxel.lemonsqueezy.com/buy/footer-pack-id",
-    liveUrl: "",
   },
 ];
