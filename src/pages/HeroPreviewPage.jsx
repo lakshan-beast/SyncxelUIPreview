@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
-import HeroDesign01 from "../library/HeroDesigns/HeroDesign01";
-import HeroDesign02 from "../library/HeroDesigns/HeroDesign02";
-import HeroDesign03 from "../library/HeroDesigns/HeroDesign03";
+// import HeroDesign01 from "../library/HeroDesigns/HeroDesign01";
+// import HeroDesign02 from "../library/HeroDesigns/HeroDesign02";
+// import HeroDesign03 from "../library/HeroDesigns/HeroDesign03";
 import { uiPacksData } from "../data/packs";
 import {
   HiTerminal,
   HiSparkles,
   HiCheckCircle,
-  HiCode,
+  // HiMiniShare,
   HiShoppingBag,
   HiArrowRight,
   HiShieldCheck,
   HiCube,
 } from "react-icons/hi";
+import { HiMiniShare } from "react-icons/hi2";
 
 export default function HeroPreviewPage() {
   const [copiedLink, setCopiedLink] = useState(false);
@@ -93,7 +94,7 @@ export default function HeroPreviewPage() {
                 {copiedLink ? (
                   <HiCheckCircle className="w-4 h-4 text-emerald-600" />
                 ) : (
-                  <HiCode className="w-4 h-4" />
+                  <HiMiniShare className="w-4 h-4" />
                 )}
                 <span>{copiedLink ? "Link Copied!" : "Share Sandbox"}</span>
               </button>
@@ -161,7 +162,7 @@ export default function HeroPreviewPage() {
             </span>
           </div>
           <ComponentPreviewSandbox title="hero_02">
-            <HeroDesign02 />
+            {/* <HeroDesign02 /> */}
           </ComponentPreviewSandbox>
         </div>
 
@@ -175,7 +176,7 @@ export default function HeroPreviewPage() {
             </span>
           </div>
           <ComponentPreviewSandbox title="hero_03">
-            <HeroDesign03 />
+            {/* <HeroDesign03 /> */}
           </ComponentPreviewSandbox>
         </div>
       </div>
