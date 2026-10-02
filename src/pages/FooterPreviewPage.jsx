@@ -8,12 +8,12 @@ import {
   HiTerminal,
   HiSparkles,
   HiCheckCircle,
-  HiCode,
   HiShoppingBag,
   HiArrowRight,
   HiShieldCheck,
   HiCube,
 } from "react-icons/hi";
+import { HiMiniShare } from "react-icons/hi2";
 
 export default function FooterPreviewPage() {
   const [copiedLink, setCopiedLink] = useState(false);
@@ -93,7 +93,7 @@ export default function FooterPreviewPage() {
                 {copiedLink ? (
                   <HiCheckCircle className="w-4 h-4 text-emerald-600" />
                 ) : (
-                  <HiCode className="w-4 h-4" />
+                  <HiMiniShare className="w-4 h-4" />
                 )}
                 <span>{copiedLink ? "Link Copied!" : "Share Sandbox"}</span>
               </button>
