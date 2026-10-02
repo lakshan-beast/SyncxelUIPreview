@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
-import FaqDesign01 from "../library/FaqDesigns/FaqDesign01";
-import FaqDesign02 from "../library/FaqDesigns/FaqDesign02";
-import FaqDesign03 from "../library/FaqDesigns/FaqDesign03";
+// import FaqDesign01 from "../library/FaqDesigns/FaqDesign01";
+// import FaqDesign02 from "../library/FaqDesigns/FaqDesign02";
+// import FaqDesign03 from "../library/FaqDesigns/FaqDesign03";
 import { uiPacksData } from "../data/packs";
 import {
   HiTerminal,
   HiSparkles,
   HiCheckCircle,
-  HiCode,
+  // HiMiniShare,
   HiShoppingBag,
   HiArrowRight,
   HiShieldCheck,
   HiCube,
 } from "react-icons/hi";
+import { HiMiniShare } from "react-icons/hi2";
 
 export default function FAQPreviewPage() {
   const [copiedLink, setCopiedLink] = useState(false);
@@ -93,7 +94,7 @@ export default function FAQPreviewPage() {
                 {copiedLink ? (
                   <HiCheckCircle className="w-4 h-4 text-emerald-600" />
                 ) : (
-                  <HiCode className="w-4 h-4" />
+                  <HiMiniShare className="w-4 h-4" />
                 )}
                 <span>{copiedLink ? "Link Copied!" : "Share Sandbox"}</span>
               </button>
@@ -161,7 +162,7 @@ export default function FAQPreviewPage() {
             </span>
           </div>
           <ComponentPreviewSandbox title="faq_02">
-            <FaqDesign02 />
+            {/* <FaqDesign02 /> */}
           </ComponentPreviewSandbox>
         </div>
 
@@ -175,7 +176,7 @@ export default function FAQPreviewPage() {
             </span>
           </div>
           <ComponentPreviewSandbox title="faq_03">
-            <FaqDesign03 />
+            {/* <FaqDesign03 /> */}
           </ComponentPreviewSandbox>
         </div>
       </div>
