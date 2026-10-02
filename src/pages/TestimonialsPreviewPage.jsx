@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
-import TestimonialDesign01 from "../library/TestimonialsDesigns/TestimonialsDesign01";
-import TestimonialDesign02 from "../library/TestimonialsDesigns/TestimonialsDesign02";
-import TestimonialDesign03 from "../library/TestimonialsDesigns/TestimonialsDesign03";
+// import TestimonialDesign01 from "../library/TestimonialsDesigns/TestimonialsDesign01";
+// import TestimonialDesign02 from "../library/TestimonialsDesigns/TestimonialsDesign02";
+// import TestimonialDesign03 from "../library/TestimonialsDesigns/TestimonialsDesign03";
 import { uiPacksData } from "../data/packs";
 import {
   HiTerminal,
   HiSparkles,
   HiCheckCircle,
-  HiCode,
   HiShoppingBag,
   HiArrowRight,
   HiShieldCheck,
   HiCube,
 } from "react-icons/hi";
+import { HiMiniShare } from "react-icons/hi2";
+
 
 export default function TestimonialsPreviewPage() {
   const [copiedLink, setCopiedLink] = useState(false);
@@ -93,7 +94,7 @@ export default function TestimonialsPreviewPage() {
                 {copiedLink ? (
                   <HiCheckCircle className="w-4 h-4 text-emerald-600" />
                 ) : (
-                  <HiCode className="w-4 h-4" />
+                  <HiMiniShare className="w-4 h-4" />
                 )}
                 <span>{copiedLink ? "Link Copied!" : "Share Sandbox"}</span>
               </button>
@@ -161,7 +162,7 @@ export default function TestimonialsPreviewPage() {
             </span>
           </div>
           <ComponentPreviewSandbox title="testimonial_02">
-            <TestimonialDesign02 />
+            {/* <TestimonialDesign02 /> */}
           </ComponentPreviewSandbox>
         </div>
 
@@ -175,7 +176,7 @@ export default function TestimonialsPreviewPage() {
             </span>
           </div>
           <ComponentPreviewSandbox title="testimonial_03">
-            <TestimonialDesign03 />
+            {/* <TestimonialDesign03 /> */}
           </ComponentPreviewSandbox>
         </div>
       </div>
