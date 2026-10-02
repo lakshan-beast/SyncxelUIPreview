@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
-import NavbarDesign01 from "../library/NavbarDesigns/NavbarDesign01";
-import NavbarDesign02 from "../library/NavbarDesigns/NavbarDesign02";
+// import NavbarDesign01 from "../library/NavbarDesigns/NavbarDesign01";
+// import NavbarDesign02 from "../library/NavbarDesigns/NavbarDesign02";
 import NavbarDesign03 from "../library/NavbarDesigns/NavbarDesign03";
 import { uiPacksData } from "../data/packs";
 import {
   HiTerminal,
   HiSparkles,
   HiCheckCircle,
-  HiCode,
+  // HiMiniShare,
   HiShoppingBag,
   HiArrowRight,
   HiShieldCheck,
   HiCube,
 } from "react-icons/hi";
+import { HiMiniShare } from "react-icons/hi2";
 
 export default function NavbarPreviewPage() {
   const [copiedLink, setCopiedLink] = useState(false);
@@ -93,7 +94,7 @@ export default function NavbarPreviewPage() {
                 {copiedLink ? (
                   <HiCheckCircle className="w-4 h-4 text-emerald-600" />
                 ) : (
-                  <HiCode className="w-4 h-4" />
+                  <HiMiniShare className="w-4 h-4" />
                 )}
                 <span>{copiedLink ? "Link Copied!" : "Share Sandbox"}</span>
               </button>
@@ -147,7 +148,7 @@ export default function NavbarPreviewPage() {
             </span>
           </div>
           <ComponentPreviewSandbox title="navbar_01">
-            <NavbarDesign01 />
+            {/* <NavbarDesign01 /> */}
           </ComponentPreviewSandbox>
         </div>
 
@@ -161,7 +162,7 @@ export default function NavbarPreviewPage() {
             </span>
           </div>
           <ComponentPreviewSandbox title="navbar_02">
-            <NavbarDesign02 />
+            {/* <NavbarDesign02 /> */}
           </ComponentPreviewSandbox>
         </div>
 
