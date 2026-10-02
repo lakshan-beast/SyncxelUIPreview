@@ -19,13 +19,13 @@ export default function App() {
         <Route path="/" element={<Navigate to="/footers" replace />} />
 
         {/* Preview Routes */}
-        {/* <Route path="/navbars" element={<NavbarPreviewPage />} />
+        <Route path="/navbars" element={<NavbarPreviewPage />} />
         <Route path="/hero" element={<HeroPreviewPage />} />
         <Route path="/auth" element={<AuthPreviewPage />} />
         <Route path="/features" element={<FeaturesPreviewPage />} />
         <Route path="/pricing" element={<PricingPreviewPage />} />
-        <Route path="/testimonials" element={<TestimonialsPreviewPage />} /> */}
-        {/* <Route path="/faq" element={<FAQPreviewPage />} /> */}
+        <Route path="/testimonials" element={<TestimonialsPreviewPage />} />
+        <Route path="/faq" element={<FAQPreviewPage />} />
         <Route path="/footers" element={<FooterPreviewPage />} />
 
         <Route path="/landing" element={<LandingPreviewPage />} />
