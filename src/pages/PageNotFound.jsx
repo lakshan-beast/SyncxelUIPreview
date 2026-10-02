@@ -43,7 +43,7 @@ import { Link } from "react-router-dom";
 
 export default function DevelopingPage() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white font-mono flex flex-col items-center justify-center p-6 text-center">
+    <div className="min-h-screen text-slate-950 bg-white font-mono flex flex-col items-center justify-center p-6 text-center">
       <div className="flex items-center gap-2 mb-4 bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full">
         <span className="w-2 h-2 rounded-full bg-amber-500 animate-ping" />
         <span className="text-xs text-amber-400 font-semibold">
