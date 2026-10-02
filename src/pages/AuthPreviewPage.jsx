@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
-import AuthDesign01 from "../library/AuthDesigns/AuthDesign01";
-import AuthDesign02 from "../library/AuthDesigns/AuthDesign02";
-import AuthDesign03 from "../library/AuthDesigns/AuthDesign03";
+// import AuthDesign01 from "../library/AuthDesigns/AuthDesign01";
+// import AuthDesign02 from "../library/AuthDesigns/AuthDesign02";
+// import AuthDesign03 from "../library/AuthDesigns/AuthDesign03";
 import { uiPacksData } from "../data/packs";
 import {
   HiTerminal,
   HiSparkles,
   HiCheckCircle,
-  HiCode,
+  // HiMiniShare,
   HiShoppingBag,
   HiArrowRight,
   HiShieldCheck,
   HiCube,
 } from "react-icons/hi";
+import { HiMiniShare } from "react-icons/hi2";
 
 export default function AuthPreviewPage() {
   const [copiedLink, setCopiedLink] = useState(false);
@@ -93,7 +94,7 @@ export default function AuthPreviewPage() {
                 {copiedLink ? (
                   <HiCheckCircle className="w-4 h-4 text-emerald-600" />
                 ) : (
-                  <HiCode className="w-4 h-4" />
+                  <HiMiniShare className="w-4 h-4" />
                 )}
                 <span>{copiedLink ? "Link Copied!" : "Share Sandbox"}</span>
               </button>
@@ -161,7 +162,7 @@ export default function AuthPreviewPage() {
             </span>
           </div>
           <ComponentPreviewSandbox title="auth_02">
-            <AuthDesign02 />
+            {/* <AuthDesign02 /> */}
           </ComponentPreviewSandbox>
         </div>
 
@@ -175,7 +176,7 @@ export default function AuthPreviewPage() {
             </span>
           </div>
           <ComponentPreviewSandbox title="auth_03">
-            <AuthDesign03 />
+            {/* <AuthDesign03 /> */}
           </ComponentPreviewSandbox>
         </div>
       </div>
