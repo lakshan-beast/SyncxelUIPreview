@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
-import PricingDesign01 from "../library/PricingDesigns/PricingDesign01";
-import PricingDesign02 from "../library/PricingDesigns/PricingDesign02";
-import PricingDesign03 from "../library/PricingDesigns/PricingDesign03";
+// import PricingDesign01 from "../library/PricingDesigns/PricingDesign01";
+// import PricingDesign02 from "../library/PricingDesigns/PricingDesign02";
+// import PricingDesign03 from "../library/PricingDesigns/PricingDesign03";
 import { uiPacksData } from "../data/packs";
 import {
   HiTerminal,
   HiSparkles,
   HiCheckCircle,
-  HiCode,
+  // HiMiniShare,
   HiShoppingBag,
   HiArrowRight,
   HiShieldCheck,
   HiCube,
 } from "react-icons/hi";
+import { HiMiniShare } from "react-icons/hi2";
 
 export default function PricingPreviewPage() {
   const [copiedLink, setCopiedLink] = useState(false);
@@ -93,7 +94,7 @@ export default function PricingPreviewPage() {
                 {copiedLink ? (
                   <HiCheckCircle className="w-4 h-4 text-emerald-600" />
                 ) : (
-                  <HiCode className="w-4 h-4" />
+                  <HiMiniShare className="w-4 h-4" />
                 )}
                 <span>{copiedLink ? "Link Copied!" : "Share Sandbox"}</span>
               </button>
@@ -161,7 +162,7 @@ export default function PricingPreviewPage() {
             </span>
           </div>
           <ComponentPreviewSandbox title="pricing_02">
-            <PricingDesign02 />
+            {/* <PricingDesign02 /> */}
           </ComponentPreviewSandbox>
         </div>
 
@@ -175,7 +176,7 @@ export default function PricingPreviewPage() {
             </span>
           </div>
           <ComponentPreviewSandbox title="pricing_03">
-            <PricingDesign03 />
+            {/* <PricingDesign03 /> */}
           </ComponentPreviewSandbox>
         </div>
       </div>
