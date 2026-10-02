@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
-import FeatureDesign01 from "../library/FeaturesDesigns/FeaturesDesign01";
-import FeatureDesign02 from "../library/FeaturesDesigns/FeaturesDesign02";
-import FeatureDesign03 from "../library/FeaturesDesigns/FeaturesDesign03";
+// import FeatureDesign01 from "../library/FeaturesDesigns/FeaturesDesign01";
+// import FeatureDesign02 from "../library/FeaturesDesigns/FeaturesDesign02";
+// import FeatureDesign03 from "../library/FeaturesDesigns/FeaturesDesign03";
 import { uiPacksData } from "../data/packs";
 import {
   HiTerminal,
   HiSparkles,
   HiCheckCircle,
-  HiCode,
+  // HiMiniShare,
   HiShoppingBag,
   HiArrowRight,
   HiShieldCheck,
   HiCube,
 } from "react-icons/hi";
+import { HiMiniShare } from "react-icons/hi2";
 
 export default function FeaturesPreviewPage() {
   const [copiedLink, setCopiedLink] = useState(false);
@@ -93,7 +94,7 @@ export default function FeaturesPreviewPage() {
                 {copiedLink ? (
                   <HiCheckCircle className="w-4 h-4 text-emerald-600" />
                 ) : (
-                  <HiCode className="w-4 h-4" />
+                  <HiMiniShare className="w-4 h-4" />
                 )}
                 <span>{copiedLink ? "Link Copied!" : "Share Sandbox"}</span>
               </button>
@@ -161,7 +162,7 @@ export default function FeaturesPreviewPage() {
             </span>
           </div>
           <ComponentPreviewSandbox title="feature_02">
-            <FeatureDesign02 />
+            {/* <FeatureDesign02 /> */}
           </ComponentPreviewSandbox>
         </div>
 
@@ -175,7 +176,7 @@ export default function FeaturesPreviewPage() {
             </span>
           </div>
           <ComponentPreviewSandbox title="feature_03">
-            <FeatureDesign03 />
+            {/* <FeatureDesign03 /> */}
           </ComponentPreviewSandbox>
         </div>
       </div>
