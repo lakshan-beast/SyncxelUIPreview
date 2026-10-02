@@ -96,9 +96,10 @@
 // }
 
 import React from "react";
+import { motion } from "framer-motion";
 import { GiElectricWhip } from "react-icons/gi";
 
-// 1. Data Object එක
+// 1. Data Object
 export const evMobilityNavData = {
   brand: {
     name: "VoltFleet AI",
@@ -120,9 +121,13 @@ export const evMobilityNavData = {
 // 2. Main Navbar Component එක
 export default function NavbarDesign03() {
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-[#090d16]/80 backdrop-blur-md border-b border-slate-800/80">
+    <motion.header
+      initial={{ y: -50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="fixed top-0 left-0 w-full z-50 bg-[#05070E] backdrop-blur-md border-b border-slate-800/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-        {/* A. Brand Logo සහ Status Badge එක */}
+        {/* A. Brand Logo and Status Badge */}
         <div className="flex items-center space-x-3">
           <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-emerald-400 p-0.5 flex items-center justify-center shadow-lg shadow-cyan-500/20">
             <div className="w-full h-full bg-[#090d16] rounded-[11px] flex items-center justify-center">
@@ -171,11 +176,15 @@ export default function NavbarDesign03() {
             <span>{evMobilityNavData.actions.activeVehicles}</span>
           </div>
 
-          <button className="px-5 py-2.5 font-sansation rounded-xl font-medium text-sm text-slate-950 bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 shadow-lg shadow-cyan-500/25 transition-all duration-200 transform hover:-translate-y-0.5">
+          <motion.button
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ duration: 0.6, ease: "easeIn" }}
+            className="px-5 py-2.5 font-sansation rounded-xl font-medium text-sm text-slate-950 bg-gradient-to-r from-[#00F2FE] to-[#4FACFE] hover:from-cyan-600 hover:to-emerald-600 shadow-lg shadow-cyan-500/25 transition-all duration-200 transform hover:-translate-y-0.5">
             {evMobilityNavData.actions.primaryText}
-          </button>
+          </motion.button>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 }
