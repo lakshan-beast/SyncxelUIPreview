@@ -2,7 +2,7 @@
 // import ComponentPreviewSandbox from "../components/ConponentsPreviewSandbox";
 // import PremiumLandingOne from "../library/LandingPagesDesigns/Landing01";
 // import PremiumLandingTwo from "../library/LandingPagesDesigns/Landing02";
-// import { HiTerminal, HiCheckCircle, HiSparkles, HiCode } from "react-icons/hi";
+// import { HiTerminal, HiCheckCircle, HiSparkles, HiMiniShare } from "react-icons/hi";
 
 // export default function LandingPagesPreviewPage() {
 //   const [copiedLink, setCopiedLink] = useState(false);
@@ -71,7 +71,7 @@
 //                 {copiedLink ? (
 //                   <HiCheckCircle className="w-4 h-4 text-emerald-600" />
 //                 ) : (
-//                   <HiCode className="w-4 h-4" />
+//                   <HiMiniShare className="w-4 h-4" />
 //                 )}
 //                 <span>{copiedLink ? "Link Copied!" : "Share Sandbox"}</span>
 //               </button>
@@ -148,7 +148,7 @@
 // import PremiumLandingOne from "../library/LandingPagesDesigns/LandingDesign01";
 // import PremiumLandingTwo from "../library/LandingPagesDesigns/LandingDesign02";
 // import { uiPacksData } from "../data/packs"; // 👈 packs.js එකෙන් ඩේටා ගෙන්වා ගැනීම
-// import { HiTerminal, HiCheckCircle, HiSparkles, HiCode, HiShoppingBag, HiArrowRight } from "react-icons/hi";
+// import { HiTerminal, HiCheckCircle, HiSparkles, HiMiniShare, HiShoppingBag, HiArrowRight } from "react-icons/hi";
 
 // export default function LandingPagesPreviewPage() {
 //   const [copiedLink, setCopiedLink] = useState(false);
@@ -228,7 +228,7 @@
 //                 {copiedLink ? (
 //                   <HiCheckCircle className="w-4 h-4 text-emerald-600" />
 //                 ) : (
-//                   <HiCode className="w-4 h-4" />
+//                   <HiMiniShare className="w-4 h-4" />
 //                 )}
 //                 <span>{copiedLink ? "Link Copied!" : "Share Sandbox"}</span>
 //               </button>
@@ -310,20 +310,21 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
 // Landing ඩිසයින්ස් ටික library ෆෝල්ඩරයෙන් ඉම්පෝට් කරගැනීම
-import LandingDesign01 from "../library/LandingPagesDesigns/LandingDesign01";
-import LandingDesign02 from "../library/LandingPagesDesigns/LandingDesign02";
+// import LandingDesign01 from "../library/LandingPagesDesigns/LandingDesign01";
+// import LandingDesign02 from "../library/LandingPagesDesigns/LandingDesign02";
 // import LandingDesign03 from "../library/LandingPagesDesigns/LandingDesign03";
 import { uiPacksData } from "../data/packs";
 import {
   HiTerminal,
   HiSparkles,
   HiCheckCircle,
-  HiCode,
+  // HiMiniShare,
   HiShoppingBag,
   HiArrowRight,
   HiShieldCheck,
   HiCube,
 } from "react-icons/hi";
+import { HiMiniShare } from "react-icons/hi2";
 
 export default function LandingPreviewPage() {
   const [copiedLink, setCopiedLink] = useState(false);
@@ -414,7 +415,7 @@ export default function LandingPreviewPage() {
                 {copiedLink ? (
                   <HiCheckCircle className="w-4 h-4 text-emerald-600" />
                 ) : (
-                  <HiCode className="w-4 h-4 text-slate-700" />
+                  <HiMiniShare className="w-4 h-4 text-slate-700" />
                 )}
                 <span>{copiedLink ? "Link Copied!" : "Share Sandbox"}</span>
               </button>
@@ -501,7 +502,7 @@ export default function LandingPreviewPage() {
             </span>
           </div>
           <ComponentPreviewSandbox title="landing_02_startup_showcase">
-            <LandingDesign02 />
+            {/* <LandingDesign02 /> */}
           </ComponentPreviewSandbox>
         </div>
 
@@ -519,7 +520,7 @@ export default function LandingPreviewPage() {
             </span>
           </div>
           <ComponentPreviewSandbox title="landing_03_product_launch">
-            <LandingDesign02 />
+            {/* <LandingDesign02 /> */}
           </ComponentPreviewSandbox>
         </div>
       </div>
