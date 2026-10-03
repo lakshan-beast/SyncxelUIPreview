@@ -47,7 +47,7 @@ export default function NavbarDesign05() {
               </div>
             </div>
 
-            <div className="flex flex-col">
+            <div className="hidden md:flex flex-col">
               <div className="flex items-center space-x-1">
                 <span className="text-xl font-bold font-bricolage tracking-wide text-white">
                   Flavor<span className="text-amber-400">Craft</span>
