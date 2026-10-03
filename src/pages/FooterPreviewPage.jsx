@@ -107,33 +107,33 @@ export default function FooterPreviewPage() {
             </div>
           </div>
 
-          {/* METADATA GRID */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 mt-8 pt-8 border-t border-slate-200 text-xs font-baloo">
-            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 flex flex-col gap-1">
-              <span className="text-slate-400 text-[10px]">FRAMEWORK</span>
-              <span className="font-bold text-slate-900 flex items-center gap-1.5">
-                <HiCube className="w-4 h-4" /> React + Tailwind
-              </span>
-            </div>
-            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 flex flex-col gap-1">
-              <span className="text-slate-400 text-[10px]">TOTAL DESIGNS</span>
-              <span className="font-bold text-slate-900 flex items-center gap-1.5">
-                <HiTerminal className="w-4 h-4" /> 03 Variations
-              </span>
-            </div>
-            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 flex flex-col gap-1">
-              <span className="text-slate-400 text-[10px]">MOBILE READY</span>
-              <span className="font-bold text-emerald-600 flex items-center gap-1.5">
-                <HiShieldCheck className="w-4 h-4" /> 100% Responsive
-              </span>
-            </div>
-            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 flex flex-col gap-1">
-              <span className="text-slate-400 text-[10px]">PRICE TIER</span>
-              <span className="font-bold text-emerald-600 text-sm">
-                {footerPack.price}
-              </span>
-            </div>
-          </div>
+         {/* METADATA GRID */}
+                   <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 mt-4 pt-2 border-t border-slate-200 text-xs font-baloo">
+                     <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 flex flex-col gap-1">
+                       <span className="text-slate-400 text-[10px]">FRAMEWORK</span>
+                       <span className="font-bold text-slate-900 flex items-center justify-center gap-1.5 text-lg text-center border-t border-t-slate-200">
+                         <HiCube className="w-4 h-4" /> React + Tailwind
+                       </span>
+                     </div>
+                     <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 flex flex-col gap-1">
+                       <span className="text-slate-400 text-[10px]">TOTAL DESIGNS</span>
+                       <span className="font-bold text-slate-900 flex items-center justify-center gap-1.5 text-lg text-center border-t border-t-slate-200">
+                         <HiTerminal className="w-4 h-4" /> 03 Variations
+                       </span>
+                     </div>
+                     <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 flex flex-col gap-1">
+                       <span className="text-slate-400 text-[10px]">MOBILE READY</span>
+                       <span className="font-bold text-emerald-600 flex items-center justify-center gap-1.5 text-lg text-center border-t border-t-slate-200">
+                         <HiShieldCheck className="w-4 h-4" /> 100% Responsive
+                       </span>
+                     </div>
+                     <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 flex flex-col gap-1">
+                       <span className="text-slate-400 text-[10px]">PRICE TIER</span>
+                       <span className="font-bold text-emerald-600 text-2xl text-center border-t border-t-slate-200">
+                         {pricingPack.price}
+                       </span>
+                     </div>
+                   </div>
         </div>
 
         {/* LIVE PREVIEWS */}
