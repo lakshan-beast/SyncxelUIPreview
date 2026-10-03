@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
-// import PricingDesign01 from "../library/PricingDesigns/PricingDesign01";
+import PricingDesign01 from "../library/PricingDesigns/PricingDesign01";
 // import PricingDesign02 from "../library/PricingDesigns/PricingDesign02";
 // import PricingDesign03 from "../library/PricingDesigns/PricingDesign03";
 import { uiPacksData } from "../data/packs";
@@ -152,7 +152,7 @@ export default function PricingPreviewPage() {
           </ComponentPreviewSandbox>
         </div>
 
-        <div className="mb-12">
+        {/* <div className="mb-12">
           <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
             <span className="flex items-center gap-2">
               <HiTerminal className="w-4 h-4" /> Pricing Design 02
@@ -162,11 +162,11 @@ export default function PricingPreviewPage() {
             </span>
           </div>
           <ComponentPreviewSandbox title="pricing_02">
-            {/* <PricingDesign02 /> */}
+            {/* <PricingDesign02 /> 
           </ComponentPreviewSandbox>
-        </div>
+        </div> */}
 
-        <div className="mb-12">
+        {/* <div className="mb-12">
           <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
             <span className="flex items-center gap-2">
               <HiTerminal className="w-4 h-4" /> Pricing Design 03
@@ -176,9 +176,9 @@ export default function PricingPreviewPage() {
             </span>
           </div>
           <ComponentPreviewSandbox title="pricing_03">
-            {/* <PricingDesign03 /> */}
+            {/* <PricingDesign03 /> 
           </ComponentPreviewSandbox>
-        </div>
+        </div> */}
       </div>
     </div>
   );
