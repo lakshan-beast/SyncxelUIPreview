@@ -48,7 +48,7 @@ export default function NavbarPreviewPage() {
           onClick={handleBackToMain}
           className="font-mono text-xs text-slate-600 hover:text-slate-900 border border-slate-200 px-3.5 py-2 rounded-xl bg-slate-100 transition-all cursor-pointer flex items-center space-x-2">
           <span>&larr;</span>
-          <span>{"// back_to_syncxel"}</span>
+          <span>Back to SyncXel</span>
         </button>
 
         <div className="flex items-center gap-4">
@@ -111,29 +111,30 @@ export default function NavbarPreviewPage() {
           </div>
 
           {/* METADATA GRID */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 mt-8 pt-8 border-t border-slate-200 text-xs font-baloo">
+          {/* METADATA GRID */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 mt-4 pt-2 border-t border-slate-200 text-xs font-baloo">
             <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 flex flex-col gap-1">
               <span className="text-slate-400 text-[10px]">FRAMEWORK</span>
-              <span className="font-bold text-slate-900 flex items-center gap-1.5">
+              <span className="font-bold text-slate-900 flex items-center justify-center gap-1.5 text-lg text-center border-t border-t-slate-200">
                 <HiCube className="w-4 h-4" /> React + Tailwind
               </span>
             </div>
             <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 flex flex-col gap-1">
               <span className="text-slate-400 text-[10px]">TOTAL DESIGNS</span>
-              <span className="font-bold text-slate-900 flex items-center gap-1.5">
+              <span className="font-bold text-slate-900 flex items-center justify-center gap-1.5 text-lg text-center border-t border-t-slate-200">
                 <HiTerminal className="w-4 h-4" /> 03 Variations
               </span>
             </div>
             <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 flex flex-col gap-1">
               <span className="text-slate-400 text-[10px]">MOBILE READY</span>
-              <span className="font-bold text-emerald-600 flex items-center gap-1.5">
+              <span className="font-bold text-emerald-600 flex items-center justify-center gap-1.5 text-lg text-center border-t border-t-slate-200">
                 <HiShieldCheck className="w-4 h-4" /> 100% Responsive
               </span>
             </div>
             <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 flex flex-col gap-1">
               <span className="text-slate-400 text-[10px]">PRICE TIER</span>
-              <span className="font-bold text-emerald-600 text-sm">
-                {navbarPack.price}
+              <span className="font-bold text-emerald-600 text-2xl text-center border-t border-t-slate-200">
+                {pricingPack.price}
               </span>
             </div>
           </div>
@@ -157,7 +158,8 @@ export default function NavbarPreviewPage() {
         <div className="mb-12">
           <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
             <span className="flex items-center gap-2">
-              <HiTerminal className="w-4 h-4" /> Navbar Design 05 | Resturant / Food Theme
+              <HiTerminal className="w-4 h-4" /> Navbar Design 05 | Resturant /
+              Food Theme
             </span>
             <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
               active
