@@ -197,7 +197,7 @@ export default function ComponentPreviewSandbox({ children, title }) {
       </div>
 
       {/* VIEWPORT CONTAINER */}
-      <div className="p-4 sm:p-8 bg-slate-100 flex justify-center items-center overflow-x-auto transition-all scrollbar-none">
+      <div className="p-2 sm:p-1 bg-slate-100 flex justify-center items-center overflow-x-auto transition-all scrollbar-none">
         <motion.div
           animate={{
             width:
