@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
-// import NavbarDesign01 from "../library/NavbarDesigns/NavbarDesign01";
+import NavbarDesign01 from "../library/NavbarDesigns/NavbarDesign01";
 import NavbarDesign03 from "../library/NavbarDesigns/NavbarDesign03";
 import NavbarDesign05 from "../library/NavbarDesigns/NavbarDesign05";
 
@@ -17,6 +17,7 @@ import {
   HiCube,
 } from "react-icons/hi";
 import { HiMiniShare } from "react-icons/hi2";
+import { FaCircleCheck } from "react-icons/fa6";
 
 export default function NavbarPreviewPage() {
   const [copiedLink, setCopiedLink] = useState(false);
@@ -80,6 +81,8 @@ export default function NavbarPreviewPage() {
                 </span>
               </div>
 
+              <div className="px-2.5 py-0.5 flex items-center justify-start gap-3 bg-emerald-300/20 text-emerald-400 border  border-emerald-400 rounded-2xl animate-pulse w-fit"><FaCircleCheck className="animate-ping" />All's Production Ready</div>
+
               <h1 className="text-2xl sm:text-4xl font-black tracking-tight text-slate-900 font-exo">
                 {navbarPack.title}
               </h1>
@@ -140,7 +143,7 @@ export default function NavbarPreviewPage() {
         </div>
 
         {/* LIVE PREVIEWS */}
-        <div className="mb-12 pt-5">
+        <div className="mb-12 pt-8">
           <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
             <span className="flex items-center gap-2">
               <HiSparkles className="w-4 h-4" /> Navbar Design 01
@@ -150,7 +153,7 @@ export default function NavbarPreviewPage() {
             </span>
           </div>
           <ComponentPreviewSandbox title="navbar_01">
-            {/* <NavbarDesign01 /> */}
+            <NavbarDesign01 />
           </ComponentPreviewSandbox>
         </div>
 

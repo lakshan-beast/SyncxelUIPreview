@@ -3,6 +3,7 @@ import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
 // import HeroDesign01 from "../library/HeroDesigns/HeroDesign01";
 // import HeroDesign02 from "../library/HeroDesigns/HeroDesign02";
 // import HeroDesign03 from "../library/HeroDesigns/HeroDesign03";
+import HeroDesign05 from "../library/HeroDesigns/HeroDesign05";
 import { uiPacksData } from "../data/packs";
 import {
   HiTerminal,
@@ -141,14 +142,14 @@ export default function HeroPreviewPage() {
         <div className="mb-12 pt-5">
           <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
             <span className="flex items-center gap-2">
-              <HiSparkles className="w-4 h-4" /> Hero Design 01
+              <HiSparkles className="w-4 h-4" /> Hero Design 05
             </span>
             <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
               active
             </span>
           </div>
-          <ComponentPreviewSandbox title="hero_01">
-            <HeroDesign01 />
+          <ComponentPreviewSandbox title="hero_05">
+            <HeroDesign05 />
           </ComponentPreviewSandbox>
         </div>
 
