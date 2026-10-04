@@ -111,7 +111,6 @@ export default function NavbarPreviewPage() {
           </div>
 
           {/* METADATA GRID */}
-          {/* METADATA GRID */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 mt-4 pt-2 border-t border-slate-200 text-xs font-baloo">
             <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 flex flex-col gap-1">
               <span className="text-slate-400 text-[10px]">FRAMEWORK</span>
@@ -134,7 +133,7 @@ export default function NavbarPreviewPage() {
             <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 flex flex-col gap-1">
               <span className="text-slate-400 text-[10px]">PRICE TIER</span>
               <span className="font-bold text-emerald-600 text-2xl text-center border-t border-t-slate-200">
-                {pricingPack.price}
+                {navbarPack.price}
               </span>
             </div>
           </div>

@@ -131,7 +131,7 @@ export default function AuthPreviewPage() {
             <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 flex flex-col gap-1">
               <span className="text-slate-400 text-[10px]">PRICE TIER</span>
               <span className="font-bold text-emerald-600 text-2xl text-center border-t border-t-slate-200">
-                {pricingPack.price}
+                {authPack.price}
               </span>
             </div>
           </div>
