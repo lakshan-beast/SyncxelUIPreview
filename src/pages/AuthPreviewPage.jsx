@@ -147,9 +147,9 @@ export default function AuthPreviewPage() {
               active
             </span>
           </div>
-          <ComponentPreviewSandbox title="auth_01">
-            <AuthDesign01 />
-          </ComponentPreviewSandbox>
+          {/* <ComponentPreviewSandbox title="auth_01"> */}
+            {/* <AuthDesign01 /> */}
+          {/* </ComponentPreviewSandbox> */}
         </div>
 
         <div className="mb-12">
@@ -161,9 +161,9 @@ export default function AuthPreviewPage() {
               active
             </span>
           </div>
-          <ComponentPreviewSandbox title="auth_02">
+          {/* <ComponentPreviewSandbox title="auth_02"> */}
             {/* <AuthDesign02 /> */}
-          </ComponentPreviewSandbox>
+          {/* </ComponentPreviewSandbox> */}
         </div>
 
         <div className="mb-12">
@@ -175,9 +175,9 @@ export default function AuthPreviewPage() {
               active
             </span>
           </div>
-          <ComponentPreviewSandbox title="auth_03">
+          {/* <ComponentPreviewSandbox title="auth_03"> */}
             {/* <AuthDesign03 /> */}
-          </ComponentPreviewSandbox>
+          {/* </ComponentPreviewSandbox> */}
         </div>
       </div>
     </div>

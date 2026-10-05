@@ -3,7 +3,7 @@ import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
 // import HeroDesign01 from "../library/HeroDesigns/HeroDesign01";
 // import HeroDesign02 from "../library/HeroDesigns/HeroDesign02";
 // import HeroDesign03 from "../library/HeroDesigns/HeroDesign03";
-import HeroDesign05 from "../library/HeroDesigns/HeroDesign05";
+import HeroDesign05 from "../library/HeroDesigns/HeroDesign052";
 import { uiPacksData } from "../data/packs";
 import {
   HiTerminal,
