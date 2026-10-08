@@ -3,6 +3,8 @@ import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
 // import AuthDesign01 from "../library/AuthDesigns/AuthDesign01";
 // import AuthDesign02 from "../library/AuthDesigns/AuthDesign02";
 // import AuthDesign03 from "../library/AuthDesigns/AuthDesign03";
+// import AuthDesign03 from "../library/AuthDesigns/AuthDesign03";
+import AuthDesign05 from "../library/AuthDesigns/AuthDesign05";
 import { uiPacksData } from "../data/packs";
 import {
   HiTerminal,
@@ -141,15 +143,15 @@ export default function AuthPreviewPage() {
         <div className="mb-12 pt-5">
           <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
             <span className="flex items-center gap-2">
-              <HiSparkles className="w-4 h-4" /> Authentication Design 01
+              <HiSparkles className="w-4 h-4" /> Authentication Design 05
             </span>
             <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
               active
             </span>
           </div>
-          {/* <ComponentPreviewSandbox title="auth_01"> */}
-            {/* <AuthDesign01 /> */}
-          {/* </ComponentPreviewSandbox> */}
+          <ComponentPreviewSandbox title="auth_05">
+            <AuthDesign05 />
+          </ComponentPreviewSandbox>
         </div>
 
         <div className="mb-12">
