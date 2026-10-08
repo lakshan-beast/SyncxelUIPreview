@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
 import NavbarDesign01 from "../library/NavbarDesigns/NavbarDesign01";
+import NavbarDesign02 from "../library/NavbarDesigns/NavbarDesign02";
 import NavbarDesign03 from "../library/NavbarDesigns/NavbarDesign03";
 import NavbarDesign05 from "../library/NavbarDesigns/NavbarDesign05";
+import NavbarDesign04 from "../library/NavbarDesigns/NavbarDesign04";
 
 import { uiPacksData } from "../data/packs";
 
@@ -183,6 +185,34 @@ export default function NavbarPreviewPage() {
           </div>
           <ComponentPreviewSandbox title="navbar_03">
             <NavbarDesign03 />
+          </ComponentPreviewSandbox>
+        </div>
+
+        <div className="mb-12">
+          <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
+            <span className="flex items-center gap-2">
+              <HiTerminal className="w-4 h-4" /> Navbar Design 04
+            </span>
+            <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
+              active
+            </span>
+          </div>
+          <ComponentPreviewSandbox title="navbar_04">
+            <NavbarDesign04 />
+          </ComponentPreviewSandbox>
+        </div>
+
+         <div className="mb-12">
+          <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
+            <span className="flex items-center gap-2">
+              <HiTerminal className="w-4 h-4" /> Navbar Design 02
+            </span>
+            <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
+              active
+            </span>
+          </div>
+          <ComponentPreviewSandbox title="navbar_04">
+            <NavbarDesign02 />
           </ComponentPreviewSandbox>
         </div>
       </div>
