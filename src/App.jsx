@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import LandingPreviewPage from "./pages/LandingPreviewPage";
 
+import SecurityWrapper from "./components/SecutrityWrapper";
+
 import NavbarPreviewPage from "./pages/NavbarsPreviewPage";
 import HeroPreviewPage from "./pages/HeroPreviewPage";
 import AuthPreviewPage from "./pages/AuthPreviewPage";
@@ -15,6 +17,7 @@ import DevelopingPage from "./pages/DevelopingPage";
 export default function App() {
   return (
     <BrowserRouter>
+      <SecurityWrapper />
       <Routes>
         <Route path="/" element={<Navigate to="/footers" replace />} />
 
