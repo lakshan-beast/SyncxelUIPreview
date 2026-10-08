@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
 import HeroDesign01 from "../library/HeroDesigns/HeroDesign01";
+import HeroDesign04 from "../library/HeroDesigns/HeroDesign04";
 // import HeroDesign02 from "../library/HeroDesigns/HeroDesign02";
 // import HeroDesign03 from "../library/HeroDesigns/HeroDesign03";
-import HeroDesign05 from "../library/HeroDesigns/HeroDesign052";
+import HeroDesign05 from "../library/HeroDesigns/HeroDesign05";
 import { uiPacksData } from "../data/packs";
 import {
   HiTerminal,
@@ -178,6 +179,20 @@ export default function HeroPreviewPage() {
           </div>
           <ComponentPreviewSandbox title="hero_03">
             {/* <HeroDesign03 /> */}
+          </ComponentPreviewSandbox>
+        </div>
+
+         <div className="mb-12">
+          <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
+            <span className="flex items-center gap-2">
+              <HiTerminal className="w-4 h-4" /> Hero Design 04
+            </span>
+            <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
+              active
+            </span>
+          </div>
+          <ComponentPreviewSandbox title="hero_04">
+            <HeroDesign04 />
           </ComponentPreviewSandbox>
         </div>
       </div>
