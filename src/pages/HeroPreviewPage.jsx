@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
-// import HeroDesign01 from "../library/HeroDesigns/HeroDesign01";
+import HeroDesign01 from "../library/HeroDesigns/HeroDesign01";
 // import HeroDesign02 from "../library/HeroDesigns/HeroDesign02";
 // import HeroDesign03 from "../library/HeroDesigns/HeroDesign03";
 import HeroDesign05 from "../library/HeroDesigns/HeroDesign052";
@@ -163,7 +163,7 @@ export default function HeroPreviewPage() {
             </span>
           </div>
           <ComponentPreviewSandbox title="hero_02">
-            {/* <HeroDesign02 /> */}
+            <HeroDesign01 />
           </ComponentPreviewSandbox>
         </div>
 
