@@ -1,0 +1,207 @@
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
+export default function MultiColumnFooter() {
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState(null); // 'loading' | 'success' | null
+
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    if (!email) return;
+
+    setStatus("loading");
+    setTimeout(() => {
+      setStatus("success");
+      setEmail("");
+      setTimeout(() => setStatus(null), 5000);
+    }, 800);
+  };
+
+  return (
+    <footer className="w-full bg-[#070709] text-neutral-300 border-t border-neutral-800/80 px-6 md:px-16 pt-20 pb-12 font-sans relative overflow-hidden selection:bg-neutral-800 selection:text-white">
+      {/* Ambient glowing atmosphere */}
+      <div className="absolute top-0 left-1/3 w-[500px] h-[200px] bg-gradient-to-r from-sky-500/5 via-emerald-500/5 to-transparent blur-[140px] pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 relative z-10 pb-16 border-b border-neutral-800/80">
+        
+        {/* COLUMN 1: BRAND & TELEMETRY IDENTITY */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="space-y-5"
+        >
+          <div className="space-y-1.5">
+            <span className="font-mono text-[10px] text-neutral-500 block tracking-widest uppercase select-none">
+              {"// system_core"}
+            </span>
+            <div className="flex items-center space-x-2.5">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shadow-[0_0_10px_rgba(16,185,129,0.5)]" />
+              <h3 className="font-mono text-sm font-bold tracking-tight text-white">
+                syncxel.core
+              </h3>
+            </div>
+          </div>
+          <p className="text-xs text-neutral-400 leading-relaxed font-light">
+            An advanced frontend engineering architecture delivering production-grade components, design systems, and minimalist UI kits.
+          </p>
+          <div className="pt-2 font-mono text-[10px] text-neutral-500 space-y-1">
+            <p className="text-emerald-400">[STATUS: ALL SYSTEMS OPERATIONAL]</p>
+            <p>[BUILD: v4.8.2-stable]</p>
+          </div>
+        </motion.div>
+
+        {/* COLUMN 2: RESOURCES & ARCHITECTURE */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="space-y-4"
+        >
+          <span className="font-mono text-[10px] text-neutral-500 uppercase select-none tracking-widest block">
+            {"// resources"}
+          </span>
+          <ul className="space-y-2.5 text-xs text-neutral-400 font-medium">
+            <li>
+              <a href="#" className="hover:text-white transition-colors duration-200 flex items-center group">
+                <span className="text-neutral-600 mr-2 group-hover:text-sky-400 transition-colors">/01</span>
+                Documentation
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-white transition-colors duration-200 flex items-center group">
+                <span className="text-neutral-600 mr-2 group-hover:text-sky-400 transition-colors">/02</span>
+                Design Tokens
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-white transition-colors duration-200 flex items-center group">
+                <span className="text-neutral-600 mr-2 group-hover:text-sky-400 transition-colors">/03</span>
+                Component Library
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-white transition-colors duration-200 flex items-center group">
+                <span className="text-neutral-600 mr-2 group-hover:text-sky-400 transition-colors">/04</span>
+                Changelog & Releases
+              </a>
+            </li>
+          </ul>
+        </motion.div>
+
+        {/* COLUMN 3: ECOSYSTEM & LEGAL */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="space-y-4"
+        >
+          <span className="font-mono text-[10px] text-neutral-500 uppercase select-none tracking-widest block">
+            {"// ecosystem"}
+          </span>
+          <ul className="space-y-2.5 text-xs text-neutral-400 font-medium">
+            <li>
+              <a href="#" className="hover:text-white transition-colors duration-200 flex items-center group">
+                <span className="text-neutral-600 mr-2 group-hover:text-emerald-400 transition-colors">#</span>
+                GitHub Repository
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-white transition-colors duration-200 flex items-center group">
+                <span className="text-neutral-600 mr-2 group-hover:text-emerald-400 transition-colors">#</span>
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-white transition-colors duration-200 flex items-center group">
+                <span className="text-neutral-600 mr-2 group-hover:text-emerald-400 transition-colors">#</span>
+                Terms of Service
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-white transition-colors duration-200 flex items-center group">
+                <span className="text-neutral-600 mr-2 group-hover:text-emerald-400 transition-colors">#</span>
+                License Agreement
+              </a>
+            </li>
+          </ul>
+        </motion.div>
+
+        {/* COLUMN 4: NEWSLETTER & TELEMETRY REGISTRATION */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="space-y-4"
+        >
+          <span className="font-mono text-[10px] text-sky-400 uppercase select-none tracking-widest block">
+            {"// subscribe_telemetry"}
+          </span>
+          <p className="text-xs text-neutral-400 font-light leading-relaxed">
+            Receive core architectural patches and component drops directly to your inbox.
+          </p>
+
+          <form onSubmit={handleSubscribe} className="space-y-2">
+            <div className="relative">
+              <input
+                type="email"
+                required
+                placeholder="developer@domain.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full bg-[#111116] text-white font-mono text-xs border border-neutral-800 px-3.5 py-3 rounded-lg focus:outline-none focus:border-sky-500/60 focus:ring-1 focus:ring-sky-500/20 transition-all placeholder-neutral-600"
+              />
+            </div>
+
+            <motion.button
+              whileTap={{ scale: 0.96 }}
+              whileHover={{ scale: 1.01 }}
+              transition={{ type: "spring", stiffness: 400, damping: 15 }}
+              type="submit"
+              disabled={status === "loading"}
+              className="w-full bg-white hover:bg-neutral-200 text-black font-mono text-xs font-semibold py-2.5 rounded-lg transition-colors duration-200 text-center shadow-lg disabled:opacity-50 flex items-center justify-center"
+            >
+              {status === "loading" ? (
+                <span className="w-3.5 h-3.5 border-2 border-black border-t-transparent rounded-full animate-spin" />
+              ) : (
+                <>
+                  <span className="text-sky-600 mr-1.5">return</span>
+                  <span>sub();</span>
+                </>
+              )}
+            </motion.button>
+          </form>
+
+          {/* Success telemetry feedback */}
+          <AnimatePresence>
+            {status === "success" && (
+              <motion.div
+                initial={{ opacity: 0, y: 4 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -4 }}
+                className="font-mono text-[10px] text-emerald-400 pt-1"
+              >
+                [SUCCESS] Registered to telemetry feed.
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </motion.div>
+
+      </div>
+
+      {/* BOTTOM METADATA BAR */}
+      <div className="max-w-7xl mx-auto pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 relative z-10 text-[10px] font-mono text-neutral-500">
+        <p>&copy; {new Date().getFullYear()} SyncXel Studio. All rights reserved.</p>
+        <div className="flex items-center space-x-4 select-none">
+          <span className="text-emerald-400 font-semibold">[SECURE_NODE]</span>
+          <span className="text-neutral-400">[SHARDS: 04-MATRIX]</span>
+          <span className="text-sky-400/80">[LATENCY: 9ms]</span>
+        </div>
+      </div>
+    </footer>
+  );
+}
