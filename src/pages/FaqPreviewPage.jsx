@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
-// import FaqDesign01 from "../library/FaqDesigns/FaqDesign01";
+import FaqDesign01 from "../library/FaqDesigns/FaqDesign01";
 // import FaqDesign02 from "../library/FaqDesigns/FaqDesign02";
 // import FaqDesign03 from "../library/FaqDesigns/FaqDesign03";
 import { uiPacksData } from "../data/packs";
