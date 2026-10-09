@@ -3,6 +3,8 @@ import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
 import FooterDesign01 from "../library/FootersDesigns/FooterDesign01";
 import FooterDesign02 from "../library/FootersDesigns/FooterDesign02";
 import FooterDesign03 from "../library/FootersDesigns/FooterDesign03";
+import FooterDesign04 from "../library/FootersDesigns/FooterDesign04";
+import FooterDesign05 from "../library/FootersDesigns/FooterDesign05";
 import { uiPacksData } from "../data/packs";
 import {
   HiTerminal,
@@ -176,6 +178,34 @@ export default function FooterPreviewPage() {
           </div>
           <ComponentPreviewSandbox title="footer_03">
             <FooterDesign03 />
+          </ComponentPreviewSandbox>
+        </div>
+
+        <div className="mb-12">
+          <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
+            <span className="flex items-center gap-2">
+              <HiTerminal className="w-4 h-4" /> Footer Design 04
+            </span>
+            <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
+              active
+            </span>
+          </div>
+          <ComponentPreviewSandbox title="footer_04">
+            <FooterDesign04 />
+          </ComponentPreviewSandbox>
+        </div>
+
+        <div className="mb-12">
+          <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
+            <span className="flex items-center gap-2">
+              <HiTerminal className="w-4 h-4" /> Footer Design 045
+            </span>
+            <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
+              active
+            </span>
+          </div>
+          <ComponentPreviewSandbox title="footer_05">
+            <FooterDesign05 />
           </ComponentPreviewSandbox>
         </div>
       </div>
