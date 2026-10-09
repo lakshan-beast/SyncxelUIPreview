@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
 // import AuthDesign01 from "../library/AuthDesigns/AuthDesign01";
-// import AuthDesign02 from "../library/AuthDesigns/AuthDesign02";
+import AuthDesign02 from "../library/AuthDesigns/AuthDesign02";
 import AuthDesign03 from "../library/AuthDesigns/AuthDesign03";
 import AuthDesign04 from "../library/AuthDesigns/AuthDesign04";
 import AuthDesign05 from "../library/AuthDesigns/AuthDesign05";
@@ -157,7 +157,7 @@ export default function AuthPreviewPage() {
         <div className="mb-12">
           <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
             <span className="flex items-center gap-2">
-              <HiTerminal className="w-4 h-4" /> Authentication Design 02
+              <HiTerminal className="w-4 h-4" /> Authentication Design 03
             </span>
             <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
               active
@@ -165,6 +165,20 @@ export default function AuthPreviewPage() {
           </div>
           <ComponentPreviewSandbox title="auth_03">
             <AuthDesign03 />
+          </ComponentPreviewSandbox>
+        </div>
+
+        <div className="mb-12">
+          <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
+            <span className="flex items-center gap-2">
+              <HiTerminal className="w-4 h-4" /> Authentication Design 02
+            </span>
+            <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
+              active
+            </span>
+          </div>
+          <ComponentPreviewSandbox title="auth_02">
+            <AuthDesign02 />
           </ComponentPreviewSandbox>
         </div>
 
