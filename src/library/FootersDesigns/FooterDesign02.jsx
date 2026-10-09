@@ -18,7 +18,7 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="w-full bg-dark text-white pt-24 pb-10 px-6 md:px-16 border-t border-[#1a1a1a]">
+      className="w-full bg-slate-950 text-white pt-24 pb-10 px-6 md:px-16 border-t border-[#1a1a1a]">
       <div className="max-w-7xl mx-auto">
         {/* 1. Top Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20 items-start">
