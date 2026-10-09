@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
-// import AuthDesign01 from "../library/AuthDesigns/AuthDesign01";
+import AuthDesign01 from "../library/AuthDesigns/AuthDesign01";
 import AuthDesign02 from "../library/AuthDesigns/AuthDesign02";
 import AuthDesign03 from "../library/AuthDesigns/AuthDesign03";
 import AuthDesign04 from "../library/AuthDesigns/AuthDesign04";
@@ -193,6 +193,20 @@ export default function AuthPreviewPage() {
           </div>
           <ComponentPreviewSandbox title="auth_04">
             <AuthDesign04 />
+          </ComponentPreviewSandbox>
+        </div>
+
+        <div className="mb-12">
+          <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
+            <span className="flex items-center gap-2">
+              <HiTerminal className="w-4 h-4" /> Authentication Design 01
+            </span>
+            <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
+              active
+            </span>
+          </div>
+          <ComponentPreviewSandbox title="auth_01">
+            <AuthDesign01 />
           </ComponentPreviewSandbox>
         </div>
       </div>
