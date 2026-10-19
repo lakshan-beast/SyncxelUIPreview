@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
 import FooterDesign01 from "../library/FootersDesigns/FooterDesign01";
 import FooterDesign02 from "../library/FootersDesigns/FooterDesign02";
@@ -42,13 +43,16 @@ export default function FooterPreviewPage() {
   return (
     <div className="w-full min-h-screen bg-slate-50 text-slate-900 font-baloo pb-24 selection:bg-slate-900 selection:text-white">
       {/* TOP NAVIGATION BAR */}
-      <nav className="w-full bg-white/80 backdrop-blur-md border-b border-slate-200 h-16 px-4 sm:px-8 flex justify-between items-center z-50 sticky top-0 shadow-xs">
-        <button
+      <nav className="w-full bg-white/80 backdrop-blur-md border-b border-slate-200 h-20 px-4 sm:px-8  flex justify-between items-center z-50 sticky top-0 shadow-xs">
+        <motion.button
+          initial={{ opacity: 0, y: -10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
           onClick={handleBackToMain}
-          className="font-mono text-xs text-slate-600 hover:text-slate-900 border border-slate-200 px-3.5 py-2 rounded-xl bg-slate-100 transition-all cursor-pointer flex items-center space-x-2">
+          className="font-mono text-xs text-slate-600 hover:text-slate-900 border border-slate-200 px-3 py-3 rounded-xl bg-slate-100 transition-all cursor-pointer flex items-center space-x-2">
           <span>&larr;</span>
-          <span>{"back_to_syncxel"}</span>
-        </button>
+          <span>{"back to syncxel"}</span>
+        </motion.button>
 
         <div className="flex items-center gap-4">
           <div className="hidden md:flex items-center gap-2 font-mono text-[11px] text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200">
@@ -56,25 +60,28 @@ export default function FooterPreviewPage() {
             <span>build_passing // footer_sandbox</span>
           </div>
 
-          <button
+          <motion.button
+            initial={{ opacity: 0, y: -10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: 0.2 }}
             onClick={handleBuyNow}
-            className="bg-slate-900 hover:bg-slate-800 text-white font-mono text-xs font-semibold px-4.5 py-2 rounded-xl transition-all shadow-sm flex items-center gap-2 cursor-pointer">
+            className="bg-slate-900 hover:bg-slate-800 text-white font-mono text-xs font-semibold px-3 py-3 rounded-xl transition-all shadow-sm flex items-center gap-1.5 cursor-pointer">
             <HiShoppingBag className="w-4 h-4" />
             <span>Get Pack ({footerPack.price})</span>
-          </button>
+          </motion.button>
         </div>
       </nav>
 
-      <div className="w-full mx-auto px-4 sm:px-8 pt-2">
+      <div className="w-full mx-auto px-4 sm:px-8 pt-3">
         {/* HERO HEADER CARD */}
         <div className="max-w-7xl mx-auto bg-white border border-slate-200 rounded-3xl p-5 sm:p-10 mb-5 shadow-sm relative overflow-hidden">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 relative z-10">
             <div className="space-y-2">
               <div className="flex flex-wrap items-center gap-1.5">
                 <span className="text-[11px] font-mono font-medium px-3 py-1 bg-slate-100 text-slate-400/80 rounded-full border border-slate-200">
-                  {`// bundle_id: ${footerPack.id}`}
+                  {`bundle_id: ${footerPack.id}`}
                 </span>
-                <span className="text-[11px] font-baloo font-bold px-3 py-1 bg-slate-900 text-white rounded-full">
+                <span className="text-[11px] font-baloo font-bold px-3 py-1 bg-red-500 text-white rounded-full">
                   {footerPack.sales || "PRO_EDITION"}
                 </span>
               </div>
@@ -88,7 +95,7 @@ export default function FooterPreviewPage() {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 shrink-0">
               <button
                 onClick={handleCopyBundleLink}
                 className="px-4.5 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl text-xs font-baloo font-medium border border-slate-200 cursor-pointer flex items-center justify-center gap-2">
@@ -110,32 +117,40 @@ export default function FooterPreviewPage() {
           </div>
 
           {/* METADATA GRID */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 mt-4 pt-2 border-t border-slate-200 text-xs font-baloo">
-            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 flex flex-col gap-1">
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: 0.3 }}
+            className="grid grid-cols-2 lg:grid-cols-4 gap-2 mt-5 pt-2 border-t border-slate-200 text-xs font-baloo">
+            <div className="bg-slate-50 p-4 rounded-3xl border border-slate-200 flex flex-col gap-1">
               <span className="text-slate-400 text-[10px]">FRAMEWORK</span>
               <span className="font-bold text-slate-900 flex items-center justify-center gap-1.5 text-lg text-center border-t border-t-slate-200">
-                <HiCube className="w-4 h-4" /> React + Tailwind
+                <HiCube className="w-4 h-4 hidden lg:block" /> React + Tailwind
+                + Motion
               </span>
             </div>
             <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 flex flex-col gap-1">
               <span className="text-slate-400 text-[10px]">TOTAL DESIGNS</span>
               <span className="font-bold text-slate-900 flex items-center justify-center gap-1.5 text-lg text-center border-t border-t-slate-200">
-                <HiTerminal className="w-4 h-4" /> 03 Variations
+                <HiTerminal className="w-4 h-4 hidden lg:block" /> 05 Variations
               </span>
             </div>
             <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 flex flex-col gap-1">
               <span className="text-slate-400 text-[10px]">MOBILE READY</span>
               <span className="font-bold text-emerald-600 flex items-center justify-center gap-1.5 text-lg text-center border-t border-t-slate-200">
-                <HiShieldCheck className="w-4 h-4" /> 100% Responsive
+                <HiShieldCheck className="w-4 h-4 hidden lg:block" /> 100%
+                Responsive
               </span>
             </div>
             <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 flex flex-col gap-1">
-              <span className="text-slate-400 text-[10px]">PRICE TIER</span>
+              <span className="text-slate-400 text-[10px] text-left">
+                PRICE TIER
+              </span>
               <span className="font-bold text-emerald-600 text-2xl text-center border-t border-t-slate-200">
                 {footerPack.price}
               </span>
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* LIVE PREVIEWS */}
