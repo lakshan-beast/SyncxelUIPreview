@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
-// import TestimonialDesign01 from "../library/TestimonialsDesigns/TestimonialsDesign01";
-// import TestimonialDesign02 from "../library/TestimonialsDesigns/TestimonialsDesign02";
-// import TestimonialDesign03 from "../library/TestimonialsDesigns/TestimonialsDesign03";
+import TestimonialDesign01 from "../library/TestimonialsDesigns/TestimonialsDesign01";
+import TestimonialDesign02 from "../library/TestimonialsDesigns/TestimonialsDesign02";
+import TestimonialDesign03 from "../library/TestimonialsDesigns/TestimonialsDesign03";
+import TestimonialDesign04 from "../library/TestimonialsDesigns/TestimonialsDesign04";
+import TestimonialDesign05 from "../library/TestimonialsDesigns/TestimonialsDesign05";
+
 import { uiPacksData } from "../data/packs";
 import {
   HiTerminal,
@@ -140,7 +143,7 @@ export default function TestimonialsPreviewPage() {
         <div className="mb-12 pt-5">
           <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
             <span className="flex items-center gap-2">
-              <HiSparkles className="w-4 h-4" /> Testimonial Design 01
+              <HiSparkles className="w-4 h-4" /> Testimonial Design 01 | Auto Carousel
             </span>
             <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
               active
@@ -154,28 +157,56 @@ export default function TestimonialsPreviewPage() {
         <div className="mb-12">
           <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
             <span className="flex items-center gap-2">
-              <HiTerminal className="w-4 h-4" /> Testimonial Design 02
+              <HiTerminal className="w-4 h-4" /> Testimonial Design 02 | Masonry Grid
             </span>
             <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
               active
             </span>
           </div>
           <ComponentPreviewSandbox title="testimonial_02">
-            {/* <TestimonialDesign02 /> */}
+            <TestimonialDesign02 />
           </ComponentPreviewSandbox>
         </div>
 
         <div className="mb-12">
           <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
             <span className="flex items-center gap-2">
-              <HiTerminal className="w-4 h-4" /> Testimonial Design 03
+              <HiTerminal className="w-4 h-4" /> Testimonial Design 03 | Logo Marquee + Quotes
             </span>
             <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
               active
             </span>
           </div>
           <ComponentPreviewSandbox title="testimonial_03">
-            {/* <TestimonialDesign03 /> */}
+            <TestimonialDesign03 />
+          </ComponentPreviewSandbox>
+        </div>
+
+        <div className="mb-12 pt-5">
+          <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
+            <span className="flex items-center gap-2">
+              <HiSparkles className="w-4 h-4" /> Testimonial Design 04 | Video Testimonial Cards
+            </span>
+            <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
+              active
+            </span>
+          </div>
+          <ComponentPreviewSandbox title="testimonial_04">
+            <TestimonialDesign04 />
+          </ComponentPreviewSandbox>
+        </div>
+
+        <div className="mb-12">
+          <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
+            <span className="flex items-center gap-2">
+              <HiTerminal className="w-4 h-4" /> Testimonial Design 05 | Spotlight Quote
+            </span>
+            <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
+              active
+            </span>
+          </div>
+          <ComponentPreviewSandbox title="testimonial_05">
+            <TestimonialDesign05 />
           </ComponentPreviewSandbox>
         </div>
       </div>

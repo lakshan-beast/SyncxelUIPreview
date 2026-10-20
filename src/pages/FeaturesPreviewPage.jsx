@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
-// import FeatureDesign01 from "../library/FeaturesDesigns/FeaturesDesign01";
-// import FeatureDesign02 from "../library/FeaturesDesigns/FeaturesDesign02";
-// import FeatureDesign03 from "../library/FeaturesDesigns/FeaturesDesign03";
+import FeatureDesign01 from "../library/FeaturesDesigns/FeaturesDesign01";
+import FeatureDesign02 from "../library/FeaturesDesigns/FeaturesDesign02";
+import FeatureDesign03 from "../library/FeaturesDesigns/FeaturesDesign03";
+import FeatureDesign04 from "../library/FeaturesDesigns/FeaturesDesign04";
+import FeatureDesign05 from "../library/FeaturesDesigns/FeaturesDesign05";
+
 import { uiPacksData } from "../data/packs";
 import {
   HiTerminal,
@@ -141,42 +144,75 @@ export default function FeaturesPreviewPage() {
         <div className="mb-12 pt-5">
           <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
             <span className="flex items-center gap-2">
-              <HiSparkles className="w-4 h-4" /> Feature Design 01
+              <HiSparkles className="w-4 h-4" /> Feature Design 01 | Spotlight
+              Bento Grid
             </span>
             <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
               active
             </span>
           </div>
           <ComponentPreviewSandbox title="feature_01">
-            {/* <FeatureDesign01 /> */}
+            <FeatureDesign01 />
           </ComponentPreviewSandbox>
         </div>
 
         <div className="mb-12">
           <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
             <span className="flex items-center gap-2">
-              <HiTerminal className="w-4 h-4" /> Feature Design 02
+              <HiTerminal className="w-4 h-4" /> Feature Design 02 | Scroll
+              Story Features
             </span>
             <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
               active
             </span>
           </div>
           <ComponentPreviewSandbox title="feature_02">
-            {/* <FeatureDesign02 /> */}
+            <FeatureDesign02 />
           </ComponentPreviewSandbox>
         </div>
 
         <div className="mb-12">
           <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
             <span className="flex items-center gap-2">
-              <HiTerminal className="w-4 h-4" /> Feature Design 03
+              <HiTerminal className="w-4 h-4" /> Feature Design 03 | Infinite
+              Marquee Cards
             </span>
             <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
               active
             </span>
           </div>
           <ComponentPreviewSandbox title="feature_03">
-            {/* <FeatureDesign03 /> */}
+            <FeatureDesign03 />
+          </ComponentPreviewSandbox>
+        </div>
+
+        <div className="mb-12">
+          <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
+            <span className="flex items-center gap-2">
+              <HiTerminal className="w-4 h-4" /> Feature Design 04 | Animated
+              Tab Showcase
+            </span>
+            <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
+              active
+            </span>
+          </div>
+          <ComponentPreviewSandbox title="feature_04">
+            <FeatureDesign04 />
+          </ComponentPreviewSandbox>
+        </div>
+
+        <div className="mb-12">
+          <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
+            <span className="flex items-center gap-2">
+              <HiTerminal className="w-4 h-4" /> Feature Design 05 | Glass
+              Metrics Bento
+            </span>
+            <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
+              active
+            </span>
+          </div>
+          <ComponentPreviewSandbox title="feature_05">
+            <FeatureDesign05 />
           </ComponentPreviewSandbox>
         </div>
       </div>

@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
 import PricingDesign01 from "../library/PricingDesigns/PricingDesign01";
-// import PricingDesign02 from "../library/PricingDesigns/PricingDesign02";
-// import PricingDesign03 from "../library/PricingDesigns/PricingDesign03";
+import PricingDesign02 from "../library/PricingDesigns/PricingDesign02";
+import PricingDesign03 from "../library/PricingDesigns/PricingDesign03";
+import PricingDesign04 from "../library/PricingDesigns/PricingDesign04";
+import PricingDesign05 from "../library/PricingDesigns/PricingDesign05";
+
 import { uiPacksData } from "../data/packs";
 import {
   HiTerminal,
@@ -141,7 +144,8 @@ export default function PricingPreviewPage() {
         <div className="mb-12 pt-5">
           <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
             <span className="flex items-center gap-2">
-              <HiSparkles className="w-4 h-4" /> Pricing Design 01
+              <HiSparkles className="w-4 h-4" /> Pricing Design 01 | Tilted
+              3-Card Photography Pricing
             </span>
             <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
               active
@@ -152,33 +156,65 @@ export default function PricingPreviewPage() {
           </ComponentPreviewSandbox>
         </div>
 
-        {/* <div className="mb-12">
+        <div className="mb-12">
           <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
             <span className="flex items-center gap-2">
-              <HiTerminal className="w-4 h-4" /> Pricing Design 02
+              <HiTerminal className="w-4 h-4" /> Pricing Design 02 | Billing
+              Toggle Spotlight
             </span>
             <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
               active
             </span>
           </div>
           <ComponentPreviewSandbox title="pricing_02">
-            {/* <PricingDesign02 /> 
+            <PricingDesign02 />
           </ComponentPreviewSandbox>
-        </div> */}
+        </div>
 
-        {/* <div className="mb-12">
+        <div className="mb-12">
           <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
             <span className="flex items-center gap-2">
-              <HiTerminal className="w-4 h-4" /> Pricing Design 03
+              <HiTerminal className="w-4 h-4" /> Pricing Design 03 | Comparison
+              Table
             </span>
             <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
               active
             </span>
           </div>
           <ComponentPreviewSandbox title="pricing_03">
-            {/* <PricingDesign03 /> 
+            <PricingDesign03 />
           </ComponentPreviewSandbox>
-        </div> */}
+        </div>
+
+        <div className="mb-12">
+          <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
+            <span className="flex items-center gap-2">
+              <HiTerminal className="w-4 h-4" /> Pricing Design 04 | Bento
+              Pricing Grid
+            </span>
+            <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
+              active
+            </span>
+          </div>
+          <ComponentPreviewSandbox title="pricing_04">
+            <PricingDesign04 />
+          </ComponentPreviewSandbox>
+        </div>
+
+        <div className="mb-12">
+          <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
+            <span className="flex items-center gap-2">
+              <HiTerminal className="w-4 h-4" /> Pricing Design 05 | Minimal
+              Gradient CTA
+            </span>
+            <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
+              active
+            </span>
+          </div>
+          <ComponentPreviewSandbox title="pricing_05">
+            <PricingDesign05 />
+          </ComponentPreviewSandbox>
+        </div>
       </div>
     </div>
   );

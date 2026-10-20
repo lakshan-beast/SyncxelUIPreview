@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import ComponentPreviewSandbox from "../components/ComponentsPreviewSandbox";
 import FaqDesign01 from "../library/FaqDesigns/FaqDesign01";
-// import FaqDesign02 from "../library/FaqDesigns/FaqDesign02";
-// import FaqDesign03 from "../library/FaqDesigns/FaqDesign03";
+import FaqDesign02 from "../library/FaqDesigns/FaqDesign02";
+import FaqDesign03 from "../library/FaqDesigns/FaqDesign03";
+import FaqDesign04 from "../library/FaqDesigns/FaqDesign04";
+import FaqDesign05 from "../library/FaqDesigns/FaqDesign05";
+
 import { uiPacksData } from "../data/packs";
 import {
   HiTerminal,
@@ -141,7 +144,8 @@ export default function FAQPreviewPage() {
         <div className="mb-12 pt-5">
           <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
             <span className="flex items-center gap-2">
-              <HiSparkles className="w-4 h-4" /> FAQ Design 01
+              <HiSparkles className="w-4 h-4" /> FAQ Design 01 | Luxury
+              Searchable FAQ
             </span>
             <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
               active
@@ -155,28 +159,60 @@ export default function FAQPreviewPage() {
         <div className="mb-12">
           <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
             <span className="flex items-center gap-2">
-              <HiTerminal className="w-4 h-4" /> FAQ Design 02
+              <HiTerminal className="w-4 h-4" /> FAQ Design 02 | Split
+              Two-Column
             </span>
             <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
               active
             </span>
           </div>
           <ComponentPreviewSandbox title="faq_02">
-            {/* <FaqDesign02 /> */}
+            <FaqDesign02 />
           </ComponentPreviewSandbox>
         </div>
 
         <div className="mb-12">
           <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
             <span className="flex items-center gap-2">
-              <HiTerminal className="w-4 h-4" /> FAQ Design 03
+              <HiTerminal className="w-4 h-4" /> FAQ Design 03 | Minimal
+              Accordion
             </span>
             <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
               active
             </span>
           </div>
           <ComponentPreviewSandbox title="faq_03">
-            {/* <FaqDesign03 /> */}
+            <FaqDesign03 />
+          </ComponentPreviewSandbox>
+        </div>
+
+        <div className="mb-12">
+          <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
+            <span className="flex items-center gap-2">
+              <HiTerminal className="w-4 h-4" /> FAQ Design 04 | Category Cards
+              Grid
+            </span>
+            <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
+              active
+            </span>
+          </div>
+          <ComponentPreviewSandbox title="faq_04">
+            <FaqDesign04 />
+          </ComponentPreviewSandbox>
+        </div>
+
+        <div className="mb-12">
+          <div className="flex items-center justify-between mb-3 px-2 font-mono text-xs text-slate-800 font-bold">
+            <span className="flex items-center gap-2">
+              <HiTerminal className="w-4 h-4" /> FAQ Design 05 | Conversational
+              Chat FAQ
+            </span>
+            <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-md">
+              active
+            </span>
+          </div>
+          <ComponentPreviewSandbox title="faq_05">
+            <FaqDesign05 />
           </ComponentPreviewSandbox>
         </div>
       </div>
