@@ -11,6 +11,7 @@ import PricingPreviewPage from "./pages/PricingPreviewPage";
 import TestimonialsPreviewPage from "./pages/TestimonialsPreviewPage";
 import FAQPreviewPage from "./pages/FaqPreviewPage";
 import FooterPreviewPage from "./pages/FooterPreviewPage";
+import CTAPreviewPage from "./pages/CTAPreviewPage";
 
 import DevelopingPage from "./pages/DevelopingPage";
 
@@ -30,6 +31,7 @@ export default function App() {
         <Route path="/testimonials" element={<TestimonialsPreviewPage />} />
         <Route path="/faq" element={<FAQPreviewPage />} />
         <Route path="/footers" element={<FooterPreviewPage />} />
+        <Route path="/cta" element={<CTAPreviewPage />} />
 
         <Route path="/landing" element={<LandingPreviewPage />} />
 
